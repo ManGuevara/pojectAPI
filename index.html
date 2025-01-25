@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PAISES</title>
     <link rel="stylesheet" href="./css/main.css">
-    <script src="./js/pais.js"></script>
+   
 
 </head>
 <body>
@@ -22,12 +22,14 @@
         </ul>
     </nav>
 
-<form action="/submit-form" method="POST">
+<form id="countryForm" >
     <h2>Elige tu país</h2>
-    <label for="pais">Nombre del país:</label>
-    <input type="text" id="pais" placeholder="Escribe tu país" required>
+    <label for="countryName">Nombre del país:</label>
+    <input type="text" id="countryName" placeholder="Escribe tu país" required>
+    <button type="submit">Consultar</button>
 </form>
+<div id="result"></div>
 
-    
+<script src="./js/pais.js"></script>
 </body>
 </html>
